@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/spim -exception_file /usr/class/cs143/lib/trap.handler -file $*
