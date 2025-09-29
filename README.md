@@ -5,7 +5,7 @@ Install Docker Desktop (or Docker Engine on Linux) before continuing.
 
 [Download and Install Docker](https://www.docker.com/products/docker-desktop/)
 
-You will be editing your code on the host (i.e. your machine) and storing it in the my-code directory.
+You will be editing your code on the host (i.e. your machine) and storing it in the `my-code` directory.
 
 ## Build the Image
 ```bash
