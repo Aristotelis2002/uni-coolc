@@ -1,17 +1,21 @@
-FROM --platform=linux/amd64 i686/ubuntu
+FROM ubuntu:24.04
 
+RUN dpkg --add-architecture i386
 RUN apt-get update
 RUN apt-get install -y \
   flex \
   bison \
   build-essential \
   csh \
-  openjdk-6-jdk \
+  openjdk-8-jdk \
   libxaw7-dev \
   nano \
   vim \
   sudo \
-  wget
+  wget \
+  libc6:i386 \
+  libstdc++6:i386 \
+  zlib1g:i386
 
 RUN mkdir -p /usr/class/bin
 
@@ -19,6 +23,7 @@ WORKDIR /usr/class
 
 RUN useradd -ms /bin/bash student
 RUN usermod -aG sudo student
+RUN usermod -aG ubuntu student
 
 RUN wget -cO - https://courses.edx.org/asset-v1:StanfordOnline+SOE.YCSCS1+1T2020+type@asset+block@student-dist.tar.gz > student-dist.tar.gz
 
@@ -36,6 +41,7 @@ COPY class-code /home/student/class-code
 COPY my-code /opt/my-code-template
 
 RUN cp -r /opt/my-code-template /home/student/my-code
+# RUN chmod 0775 /home/student/my-code
 
 RUN chown -R student:student /home/student/class-code /home/student/my-code \
     && chmod -R a+rX /opt/my-code-template
