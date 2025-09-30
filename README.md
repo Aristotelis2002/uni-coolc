@@ -12,6 +12,11 @@ You will be editing your code on the host (i.e. your machine) and storing it in 
 docker build -t cool-env .
 ```
 
+If you have issues building this image on MAC, try the following command:
+```bash
+docker build --platform linux/amd64 -t cool-env .
+```
+
 ## Run the Container
 
 ### One-off session (disposable)
