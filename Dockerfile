@@ -7,11 +7,13 @@ RUN apt-get install -y \
   bison \
   build-essential \
   csh \
-  openjdk-8-jdk \
+  openjdk-17-jdk-headless \
   libxaw7-dev \
   nano \
   vim \
   sudo \
+  curl \
+  unzip \
   wget \
   libc6:i386 \
   libstdc++6:i386 \
@@ -37,11 +39,36 @@ RUN mkdir -p /etc/sudoers.d
 RUN echo 'student ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/student
 RUN chmod 0440 /etc/sudoers.d/student
 
+# --- ANTLR 4 toolchain (append-only, fixed heredocs) ---
+ENV ANTLR_VERSION=4.13.1
+
+# Download the ANTLR jar
+RUN mkdir -p /usr/local/lib \
+ && wget -qO /usr/local/lib/antlr-${ANTLR_VERSION}-complete.jar \
+      https://www.antlr.org/download/antlr-${ANTLR_VERSION}-complete.jar
+
+# antlr4 launcher
+RUN cat >/usr/local/bin/antlr4 <<EOF \
+ && chmod +x /usr/local/bin/antlr4
+#!/usr/bin/env bash
+java -Xmx500M -cp "/usr/local/lib/antlr-${ANTLR_VERSION}-complete.jar:\$CLASSPATH" org.antlr.v4.Tool "\$@"
+EOF
+
+# grun (TestRig) launcher
+RUN cat >/usr/local/bin/grun <<EOF \
+ && chmod +x /usr/local/bin/grun
+#!/usr/bin/env bash
+java -Xmx500M -cp "/usr/local/lib/antlr-${ANTLR_VERSION}-complete.jar:\$CLASSPATH" org.antlr.v4.gui.TestRig "\$@"
+EOF
+
+# Make ANTLR available to javac/java by default (append-only)
+ENV CLASSPATH="/usr/local/lib/antlr-${ANTLR_VERSION}-complete.jar:${CLASSPATH}"
+
 COPY class-code /home/student/class-code
 COPY my-code /opt/my-code-template
 
 RUN cp -r /opt/my-code-template /home/student/my-code
-# RUN chmod 0775 /home/student/my-code
+RUN chmod 0775 /home/student/my-code
 
 RUN chown -R student:student /home/student/class-code /home/student/my-code \
     && chmod -R a+rX /opt/my-code-template
