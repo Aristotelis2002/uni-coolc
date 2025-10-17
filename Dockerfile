@@ -40,7 +40,7 @@ RUN echo 'student ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/student
 RUN chmod 0440 /etc/sudoers.d/student
 
 # --- ANTLR 4 toolchain (append-only, fixed heredocs) ---
-ENV ANTLR_VERSION=4.13.1
+ENV ANTLR_VERSION=4.13.2
 
 # Download the ANTLR jar
 RUN mkdir -p /usr/local/lib \
@@ -92,6 +92,14 @@ fi
 exec "$@"
 EOF
 RUN chmod +x /usr/local/bin/container-entrypoint.sh
+
+# Download, build, and install ANTLR4 C++ runtime
+RUN apt-get install -y python3 cmake
+RUN mkdir -p /tmp/antlr-build
+WORKDIR /tmp/antlr-build
+RUN wget -cO - https://www.antlr.org/download/antlr4-cpp-runtime-${ANTLR_VERSION}-source.zip > antlr.zip
+RUN unzip antlr.zip
+RUN cmake . && cmake --build . --target install
 
 USER student
 WORKDIR /home/student/my-code
