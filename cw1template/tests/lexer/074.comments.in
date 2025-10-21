@@ -1,0 +1,5 @@
+"first"
+(* multi-line comments
+can span
+multiple lines *)
+"second"

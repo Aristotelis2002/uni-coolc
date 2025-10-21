@@ -7,7 +7,26 @@ Install Docker Desktop (or Docker Engine on Linux) before continuing.
 
 You will be editing your code on the host (i.e. your machine) and storing it in the `my-code` directory.
 
-## Build the Image
+Now that you have docker installed, you can either download a prebuilt version
+of the container image, or build your own.
+
+## Download a prebuilt container image
+
+We try to keep an up-to-date build of the container image on the GitHub
+container registry -- ghcr.io. To download the latest version:
+
+```bash
+docker pull ghcr.io/aristotelis2002/uni-cool
+```
+
+You can optionally type `uni-cool:latest`, but `:latest` is the default version
+that is downloaded.
+
+```bash
+docker pull ghcr.io/aristotelis2002/uni-cool:
+```
+
+## (Alternative) Build the Image
 ```bash
 docker build -t cool-env .
 ```

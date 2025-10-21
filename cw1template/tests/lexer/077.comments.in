@@ -1,0 +1,3 @@
+(* multi-line comments
+    (* need to be terminated *)
+    even after nesting

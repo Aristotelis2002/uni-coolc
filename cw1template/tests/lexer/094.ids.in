@@ -1,0 +1,6 @@
+foo.bar.baz.qux
+1startswithnumber
+contains-dash
+Type-Contains-Dash
+_cannot_start_with_underscore
+Type-object

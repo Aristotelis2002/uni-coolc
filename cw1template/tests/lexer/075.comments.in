@@ -1,0 +1,5 @@
+"first"
+(* multi-line comments
+    (* can be nested *)
+without a problem *)
+"second"
