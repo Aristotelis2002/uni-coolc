@@ -1,0 +1,2 @@
+#1 STR_CONST "\"ok"
+#2 ERROR: Unterminated string at EOF

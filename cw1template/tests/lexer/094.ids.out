@@ -1,0 +1,22 @@
+#1 OBJECTID foo
+#1 '.'
+#1 OBJECTID bar
+#1 '.'
+#1 OBJECTID baz
+#1 '.'
+#1 OBJECTID qux
+#2 INT_CONST 1
+#2 OBJECTID startswithnumber
+#3 OBJECTID contains
+#3 '-'
+#3 OBJECTID dash
+#4 TYPEID Type
+#4 '-'
+#4 TYPEID Contains
+#4 '-'
+#4 TYPEID Dash
+#5 ERROR: Invalid symbol "_"
+#5 OBJECTID cannot_start_with_underscore
+#6 TYPEID Type
+#6 '-'
+#6 OBJECTID object

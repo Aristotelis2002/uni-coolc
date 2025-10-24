@@ -1,0 +1,2 @@
+#1 ERROR: String contains unescaped new line
+#2 STR_CONST "this is a new string"

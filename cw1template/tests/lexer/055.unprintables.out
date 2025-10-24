@@ -1,0 +1,5 @@
+#1 STR_CONST "This is a tab:\t"
+#2 STR_CONST "This is a backspace:\b"
+#3 STR_CONST "This is a formfeed:<0x0c>"
+#4 STR_CONST "This is a carriage return:<0x0d>"
+#5 STR_CONST "This is an escape:<0x1b>"
