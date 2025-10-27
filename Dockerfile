@@ -1,6 +1,14 @@
 FROM ubuntu:24.04
 
-RUN dpkg --add-architecture i386
+# Docker automatically sets TARGETPLATFORM (e.g., linux/amd64 or linux/arm64)
+ARG TARGETPLATFORM
+
+RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
+        dpkg --add-architecture armhf; \
+    else \
+        dpkg --add-architecture i386; \
+    fi
+
 RUN apt-get update
 RUN apt-get install -y \
   flex \
@@ -14,10 +22,13 @@ RUN apt-get install -y \
   sudo \
   curl \
   unzip \
-  wget \
-  libc6:i386 \
-  libstdc++6:i386 \
-  zlib1g:i386
+  wget
+
+RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
+        apt-get install -y libc6:armhf libstdc++6:armhf zlib1g:armhf; \
+    else \
+        apt-get install -y libc6:i386 libstdc++6:i386 zlib1g:i386; \
+    fi
 
 RUN mkdir -p /usr/class/bin
 
