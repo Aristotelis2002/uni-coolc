@@ -110,7 +110,7 @@ RUN mkdir -p /tmp/antlr-build
 WORKDIR /tmp/antlr-build
 RUN wget -cO - https://www.antlr.org/download/antlr4-cpp-runtime-${ANTLR_VERSION}-source.zip > antlr.zip
 RUN unzip antlr.zip
-RUN cmake . && cmake --build . --target install
+RUN cmake . && cmake --build . --parallel --target install
 
 COPY cw1template /cw1template
 
