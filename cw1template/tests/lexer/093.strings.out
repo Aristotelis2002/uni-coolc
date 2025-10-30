@@ -1,2 +1,2 @@
 #1 STR_CONST "\"ok"
-#2 ERROR: Unterminated string at EOF
+#2 ERROR: String contains unescaped new line
