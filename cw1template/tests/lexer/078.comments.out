@@ -1,2 +1,2 @@
 #1 STR_CONST "hello"
-#3 ERROR: Unmatched (*
+#3 ERROR: EOF in comment
