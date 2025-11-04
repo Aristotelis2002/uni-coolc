@@ -1,0 +1,9 @@
+class List {
+    head: String;
+    tail: List;
+
+    getHead(): String { head };
+    getTail(): List { tail };
+
+    setHead(new_head: String): String { head <- new_head };
+};

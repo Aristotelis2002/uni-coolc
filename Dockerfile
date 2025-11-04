@@ -112,7 +112,7 @@ RUN wget -cO - https://www.antlr.org/download/antlr4-cpp-runtime-${ANTLR_VERSION
 RUN unzip antlr.zip
 RUN cmake . && cmake --build . --parallel --target install
 
-COPY cw1template /cw1template
+RUN apt-get install -y git
 
 USER student
 WORKDIR /home/student/my-code

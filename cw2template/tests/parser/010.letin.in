@@ -1,0 +1,5 @@
+class Foo {
+    bar() : Bar {
+        let x : Foo in y
+    };
+};

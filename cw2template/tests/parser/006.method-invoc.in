@@ -1,0 +1,5 @@
+class Foo {
+    bar() : Bar {
+        bar(arg1, arg2, arg3)
+    };
+};

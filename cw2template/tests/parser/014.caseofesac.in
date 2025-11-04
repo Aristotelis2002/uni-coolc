@@ -1,0 +1,12 @@
+class Foo {
+    bar() : Bar {
+        case x of
+            y : Foo => z;
+            a : Bar => b;
+            a : Bar => b;
+            a : Bar => b;
+            a : Bar => b;
+            a : Bar => b;
+        esac
+    };
+};

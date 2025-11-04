@@ -1,0 +1,7 @@
+class List {
+    head: String;
+    tail: List;
+
+    getHead(): String { head };
+    getTail(): List { tail };
+};

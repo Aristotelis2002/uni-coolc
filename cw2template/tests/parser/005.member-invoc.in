@@ -1,0 +1,5 @@
+class Foo {
+    bar() : Bar {
+        baz@Foo.bar(arg1, arg2, arg3)
+    };
+};

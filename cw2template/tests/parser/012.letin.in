@@ -1,0 +1,14 @@
+class Foo {
+    bar() : Bar {
+        let x1 : Foo,
+            x2 : Bar,
+            x3 : Bar,
+            x4 : Bar,
+            x5 : Bar,
+            x6 : Bar,
+            x7 : Bar,
+            x8 : Bar
+        in
+            x9
+    };
+};

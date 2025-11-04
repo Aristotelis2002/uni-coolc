@@ -1,0 +1,5 @@
+class Foo {
+    bar() : Int {
+        let x1 : Int, x2 : Bool <- false, x3 : String <- "4" in 0
+    };
+};

@@ -1,0 +1,5 @@
+class Foo {
+    bar() : Bar {
+        if a then b else c fi
+    };
+};
