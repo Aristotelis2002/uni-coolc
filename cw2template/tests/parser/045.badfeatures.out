@@ -1,0 +1,4 @@
+"045.badfeatures.in", line 2: syntax error at or near OBJECTID = int
+"045.badfeatures.in", line 4: syntax error at or near ';'
+"045.badfeatures.in", line 6: syntax error at or near OBJECTID = y
+Compilation halted due to lex and parse errors

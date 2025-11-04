@@ -10,7 +10,6 @@
 *.gz
 *.bz2
 *.xz
-*.out
 *.o
 *.obj
 *.class

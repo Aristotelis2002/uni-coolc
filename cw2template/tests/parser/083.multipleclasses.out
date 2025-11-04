@@ -1,0 +1,3 @@
+"083.multipleclasses.in", line 6: syntax error at or near OBJECTID = extends
+"083.multipleclasses.in", line 15: syntax error at or near OBJECTID = implements
+Compilation halted due to lex and parse errors

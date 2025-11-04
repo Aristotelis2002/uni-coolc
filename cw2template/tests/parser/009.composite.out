@@ -1,0 +1,24 @@
+#6
+_program
+  #6
+  _class
+    Foo
+    Object
+    "009.composite.in"
+    (
+    #5
+    _method
+      bar
+      Bar
+      #5
+      _block
+        #3
+        _object
+          a
+        : _no_type
+        #4
+        _object
+          b
+        : _no_type
+      : _no_type
+    )

@@ -1,0 +1,24 @@
+#5
+_program
+  #5
+  _class
+    Foo
+    Object
+    "008.whilelooppool.in"
+    (
+    #4
+    _method
+      bar
+      Bar
+      #3
+      _loop
+        #3
+        _object
+          x
+        : _no_type
+        #3
+        _object
+          y
+        : _no_type
+      : _no_type
+    )

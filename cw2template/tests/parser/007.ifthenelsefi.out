@@ -1,0 +1,28 @@
+#5
+_program
+  #5
+  _class
+    Foo
+    Object
+    "007.ifthenelsefi.in"
+    (
+    #4
+    _method
+      bar
+      Bar
+      #3
+      _cond
+        #3
+        _object
+          a
+        : _no_type
+        #3
+        _object
+          b
+        : _no_type
+        #3
+        _object
+          c
+        : _no_type
+      : _no_type
+    )

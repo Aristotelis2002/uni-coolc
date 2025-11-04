@@ -1,0 +1,3 @@
+"096.while.in", line 8: syntax error at or near LOOP
+"096.while.in", line 9: syntax error at or near POOL
+Compilation halted due to lex and parse errors

@@ -1,0 +1,3 @@
+"066.firstclasserrored.in", line 1: syntax error at or near OBJECTID = asdfjkasldfjdklaf
+"066.firstclasserrored.in", line 3: syntax error at or near TYPEID = B
+Compilation halted due to lex and parse errors

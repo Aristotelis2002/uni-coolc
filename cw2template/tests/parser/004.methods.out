@@ -1,0 +1,55 @@
+#9
+_program
+  #9
+  _class
+    List
+    Object
+    "004.methods.in"
+    (
+    #2
+    _attr
+      head
+      String
+      #2
+      _no_expr
+      : _no_type
+    #3
+    _attr
+      tail
+      List
+      #3
+      _no_expr
+      : _no_type
+    #5
+    _method
+      getHead
+      String
+      #5
+      _object
+        head
+      : _no_type
+    #6
+    _method
+      getTail
+      List
+      #6
+      _object
+        tail
+      : _no_type
+    #8
+    _method
+      setHead
+      #8
+      _formal
+        new_head
+        String
+      String
+      #8
+      _assign
+        head
+        #8
+        _object
+          new_head
+        : _no_type
+      : _no_type
+    )

@@ -1,0 +1,36 @@
+#5
+_program
+  #5
+  _class
+    Foo
+    Object
+    "005.member-invoc.in"
+    (
+    #4
+    _method
+      bar
+      Bar
+      #3
+      _static_dispatch
+        #3
+        _object
+          baz
+        : _no_type
+        Foo
+        bar
+        (
+        #3
+        _object
+          arg1
+        : _no_type
+        #3
+        _object
+          arg2
+        : _no_type
+        #3
+        _object
+          arg3
+        : _no_type
+        )
+      : _no_type
+    )

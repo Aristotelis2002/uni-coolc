@@ -1,0 +1,23 @@
+#4
+_program
+  #4
+  _class
+    List
+    Object
+    "002.fields.in"
+    (
+    #2
+    _attr
+      head
+      String
+      #2
+      _no_expr
+      : _no_type
+    #3
+    _attr
+      tail
+      List
+      #3
+      _no_expr
+      : _no_type
+    )

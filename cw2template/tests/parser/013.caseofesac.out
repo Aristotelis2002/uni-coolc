@@ -1,0 +1,36 @@
+#8
+_program
+  #8
+  _class
+    Foo
+    Object
+    "013.caseofesac.in"
+    (
+    #7
+    _method
+      bar
+      Bar
+      #6
+      _typcase
+        #3
+        _object
+          x
+        : _no_type
+        #4
+        _branch
+          y
+          Foo
+          #4
+          _object
+            z
+          : _no_type
+        #5
+        _branch
+          a
+          Bar
+          #5
+          _object
+            b
+          : _no_type
+      : _no_type
+    )

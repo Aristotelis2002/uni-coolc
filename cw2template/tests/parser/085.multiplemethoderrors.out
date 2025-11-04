@@ -1,0 +1,3 @@
+"085.multiplemethoderrors.in", line 4: syntax error at or near '}'
+"085.multiplemethoderrors.in", line 6: syntax error at or near '}'
+Compilation halted due to lex and parse errors

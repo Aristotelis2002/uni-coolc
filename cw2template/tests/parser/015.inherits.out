@@ -1,0 +1,68 @@
+#12
+_program
+  #12
+  _class
+    Foo
+    Baz
+    "015.inherits.in"
+    (
+    #11
+    _method
+      bar
+      Bar
+      #10
+      _typcase
+        #3
+        _object
+          x
+        : _no_type
+        #4
+        _branch
+          y
+          Foo
+          #4
+          _object
+            z
+          : _no_type
+        #5
+        _branch
+          a
+          Bar
+          #5
+          _object
+            b
+          : _no_type
+        #6
+        _branch
+          a
+          Bar
+          #6
+          _object
+            b
+          : _no_type
+        #7
+        _branch
+          a
+          Bar
+          #7
+          _object
+            b
+          : _no_type
+        #8
+        _branch
+          a
+          Bar
+          #8
+          _object
+            b
+          : _no_type
+        #9
+        _branch
+          a
+          Bar
+          #9
+          _object
+            b
+          : _no_type
+      : _no_type
+    )

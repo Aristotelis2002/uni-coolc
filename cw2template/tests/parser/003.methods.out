@@ -1,0 +1,39 @@
+#7
+_program
+  #7
+  _class
+    List
+    Object
+    "003.methods.in"
+    (
+    #2
+    _attr
+      head
+      String
+      #2
+      _no_expr
+      : _no_type
+    #3
+    _attr
+      tail
+      List
+      #3
+      _no_expr
+      : _no_type
+    #5
+    _method
+      getHead
+      String
+      #5
+      _object
+        head
+      : _no_type
+    #6
+    _method
+      getTail
+      List
+      #6
+      _object
+        tail
+      : _no_type
+    )

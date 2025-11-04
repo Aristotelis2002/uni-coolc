@@ -1,0 +1,3 @@
+"090.secondbindingerrored.in", line 2: syntax error at or near TYPEID = Bork
+"090.secondbindingerrored.in", line 2: syntax error at or near TYPEID = B
+Compilation halted due to lex and parse errors

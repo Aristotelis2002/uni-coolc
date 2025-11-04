@@ -1,0 +1,31 @@
+#5
+_program
+  #5
+  _class
+    Foo
+    Object
+    "024.precedence.in"
+    (
+    #4
+    _method
+      bar
+      Bar
+      #3
+      _mul
+        #3
+        _mul
+          #3
+          _int
+            1
+          : _no_type
+          #3
+          _int
+            2
+          : _no_type
+        : _no_type
+        #3
+        _int
+          3
+        : _no_type
+      : _no_type
+    )

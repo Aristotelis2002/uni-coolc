@@ -1,0 +1,81 @@
+#14
+_program
+  #14
+  _class
+    Foo
+    Object
+    "012.letin.in"
+    (
+    #13
+    _method
+      bar
+      Bar
+      #12
+      _let
+        x1
+        Foo
+        #3
+        _no_expr
+        : _no_type
+        #12
+        _let
+          x2
+          Bar
+          #4
+          _no_expr
+          : _no_type
+          #12
+          _let
+            x3
+            Bar
+            #5
+            _no_expr
+            : _no_type
+            #12
+            _let
+              x4
+              Bar
+              #6
+              _no_expr
+              : _no_type
+              #12
+              _let
+                x5
+                Bar
+                #7
+                _no_expr
+                : _no_type
+                #12
+                _let
+                  x6
+                  Bar
+                  #8
+                  _no_expr
+                  : _no_type
+                  #12
+                  _let
+                    x7
+                    Bar
+                    #9
+                    _no_expr
+                    : _no_type
+                    #12
+                    _let
+                      x8
+                      Bar
+                      #10
+                      _no_expr
+                      : _no_type
+                      #12
+                      _object
+                        x9
+                      : _no_type
+                    : _no_type
+                  : _no_type
+                : _no_type
+              : _no_type
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    )
