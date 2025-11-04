@@ -82,7 +82,7 @@ add_custom_command(
   COMMAND ${Java_JAVA_EXECUTABLE} ${ANTLR4_TOOL_BASE_ARGS} -visitor "${SRC_DIR}/CoolParser.g4" -o "${GEN_DIR}"
   DEPENDS
     "${SRC_DIR}/CoolParser.g4"
-    "${LIB_DIR}/CoolLexer.tokens"
+    "${SRC_DIR}/CoolLexer.tokens"
   COMMENT "Generating COOL parser code"
   VERBATIM
 )
