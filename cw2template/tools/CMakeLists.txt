@@ -79,7 +79,7 @@ add_custom_command(
   OUTPUT ${GENERATED_PARSER_CODE}
   BYPRODUCTS ${GENERATED_PARSER_HEADERS}
   COMMAND ${CMAKE_COMMAND} -E make_directory "${GEN_DIR}"
-  COMMAND ${Java_JAVA_EXECUTABLE} ${ANTLR4_TOOL_BASE_ARGS} -visitor "${SRC_DIR}/CoolParser.g4" -o "${GEN_DIR}"
+  COMMAND ${Java_JAVA_EXECUTABLE} ${ANTLR4_TOOL_BASE_ARGS} -visitor -no-listener "${SRC_DIR}/CoolParser.g4" -o "${GEN_DIR}"
   DEPENDS
     "${SRC_DIR}/CoolParser.g4"
     "${SRC_DIR}/CoolLexer.tokens"
