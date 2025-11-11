@@ -258,10 +258,12 @@ class  : CLASS TYPEID '{' '}' ;
 \begin{enumerate}
     \item src/CoolLexer.tokens,
     \item include/CoolLexer.h и
-    \item lib/liblexer\_gen\_code.
+    \item lib/liblexer\_gen\_code.a.
+    \item lib/liblexer\_gen\_code\_arm.a.
 \end{enumerate}
 
 \noindent Ако искате да ползвате лексикалния анализатор, който сте предали за част първа от курсовата работа, може да изтриете тези файлове от вашето копие на шаблонния код.
+Ако искате да ползвате служебния лексикален анализатор и работите на машина с ARM процесор, променете ./tools/CMakeLists.txt, така че да ползва lib/liblexer\_gen\_code\_arm.a вместо lib/liblexer\_gen\_code.a.
 
 \subsection{Visitor Pattern}\label{sec:visitor}
 
@@ -364,6 +366,10 @@ cout << lexer_->get_bool_value(char_index) << endl;
 
 \section{Предаване на Решение}
 
-(Следва да се напише.)
+За да предадете решение, изпълнете ``tools/grade-parser.sh'' в контейнера.
+Този скрипт ще отпечата код за предаване, например ``4:a87ff679a2f3e71d9181a67b7542122c''.
+Копирайте този код в специалния \href{https://learn.fmi.uni-sofia.bg/mod/quiz/view.php?id=360676}{формуляр за предаване в Мудъл}.
+Освен това, трябва да качите и променения от вас код (само ``CoolParser.g4'' и ``ParserDriver.cpp'') в специалната \href{https://learn.fmi.uni-sofia.bg/mod/publication/view.php?id=360678}{папка за предаване в Мудъл}.
+Ако сте променили C++ проекта, така че да включва и други файлове, качете и тях в папката.
 
 \end{document}
