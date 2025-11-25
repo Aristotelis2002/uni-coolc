@@ -1,0 +1,8 @@
+class Bar { };
+
+class Foo {
+    foo : Foo;
+    foo() : Bool {
+        not new Object
+    };
+};

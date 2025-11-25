@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+In class `Foo` attribute `bar`: `String` is not `Int`: type of initialization expression is not a subtype of declared type

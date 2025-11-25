@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+A `String` can only be compared to another `String` and not to a `Int`

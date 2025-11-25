@@ -1,0 +1,5 @@
+class Foo {
+    foo() : Foo {
+        let foo : Foo in foo
+    };
+};

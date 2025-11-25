@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Initializer for variable `bar` in let-in expression is of type `Foo` which is not a subtype of the declared type `Bar`
+In class `Foo` method `foo`: `Bar` is not `Foo`: type of method body is not a subtype of return type

@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Undefined type `Baz` in static method dispatch

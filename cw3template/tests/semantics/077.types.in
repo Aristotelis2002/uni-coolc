@@ -1,0 +1,6 @@
+class Foo {
+    foo : Foo <- bar;
+    bar : Bar <- foo;
+};
+
+class Bar inherits Foo { };

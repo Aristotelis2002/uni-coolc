@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Method `bar` not defined for type `Foo` in dynamic dispatch

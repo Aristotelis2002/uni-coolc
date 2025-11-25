@@ -1,0 +1,7 @@
+class Bar { };
+
+class Foo {
+    foo() : Bool {
+        if isvoid foo() then false else 1 fi
+    };
+};

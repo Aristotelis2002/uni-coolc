@@ -1,0 +1,9 @@
+class Object { };
+
+class Bool { };
+
+class Int { };
+
+class IO { };
+
+class String { };

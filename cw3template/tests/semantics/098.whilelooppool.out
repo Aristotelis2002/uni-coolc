@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Type `Foo` of while-loop-pool condition is not `Bool`

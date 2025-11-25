@@ -1,0 +1,7 @@
+class Foo {
+    bar : Foo;
+};
+
+class Bar inherits Foo {
+    bar : Bar;
+};

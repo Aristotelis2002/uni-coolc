@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+In class `Foo` attribute `bar`: `String` is not `Int`: type of initialization expression is not a subtype of declared type
+Assignee named `qux` not in scope

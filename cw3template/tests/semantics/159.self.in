@@ -1,0 +1,12 @@
+class Foo {
+    foo(foo : Foo) : String {
+        case foo of
+            x : SELF_TYPE => "a";
+            y : Bar => "b";
+        esac
+    };
+};
+
+class Bar inherits Foo {
+    bar() : String { foo(new Bar) };
+};

@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Type `Foo` of if-then-else-fi condition is not `Bool`

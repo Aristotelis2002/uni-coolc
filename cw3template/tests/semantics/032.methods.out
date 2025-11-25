@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Override for method foo in class Bar has different signature than method in ancestor Foo (earliest ancestor that mismatches)
+Override for method foo in class Qux has different signature than method in ancestor Foo (earliest ancestor that mismatches)

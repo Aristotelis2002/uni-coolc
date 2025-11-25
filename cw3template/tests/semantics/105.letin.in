@@ -1,0 +1,7 @@
+class Bar { };
+
+class Foo {
+    foo() : Foo {
+        let foo : Foo, bar : Bar <- foo in bar
+    };
+};

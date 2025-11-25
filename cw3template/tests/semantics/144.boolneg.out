@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Argument of boolean negation is not of type `Bool`, but of type `Int`

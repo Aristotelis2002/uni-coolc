@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Multiple options match on type `Foo`
+Variable named `foo` not in scope

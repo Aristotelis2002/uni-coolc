@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Option `bar` in case-of-esac declared to have unknown type `Baz`
+Variable named `bar` not in scope

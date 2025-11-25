@@ -1,0 +1,13 @@
+class Baz {};
+
+class Foo inherits Baz {};
+
+class Bar inherits Foo {
+    bar : Bar;
+    
+    bar() : Int { 1 };
+
+    baz() : Int {
+        bar@Baz.bar()
+    };
+};

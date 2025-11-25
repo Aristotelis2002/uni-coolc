@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Method `bar` of type `Baz` called with the wrong number of arguments; 0 arguments expected, but 2 provided

@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Attribute `foo` already defined for class `Foo`

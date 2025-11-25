@@ -1,0 +1,9 @@
+class Foo {
+    foo() : Object {
+        {
+            foo();
+            foo();
+            foo();
+        }
+    };
+};

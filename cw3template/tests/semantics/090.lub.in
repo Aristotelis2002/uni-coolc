@@ -1,0 +1,26 @@
+class Foo {
+    qux : Qux;
+    zap : Zap;
+
+    b : Bool;
+    foo() : Bar {
+        if b then qux else zap fi
+    };
+};
+
+class Bar inherits Foo {};
+
+class Baz inherits Bar {};
+
+class Qux inherits Bar {};
+
+class Zap inherits Baz {};
+
+(* Foo
+   - Bar
+     - Baz
+       - Zap
+     - Qux
+  
+   lub(Qux, Zap) = Bar < Foo
+*)

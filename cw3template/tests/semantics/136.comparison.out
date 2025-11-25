@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Left-hand-side of integer comparison is not of type `Int`, but of type `Foo`

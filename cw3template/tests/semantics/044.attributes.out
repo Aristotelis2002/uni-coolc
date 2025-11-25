@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Attribute `bar` in class `Bar` redefines attribute with the same name in ancestor `Foo` (earliest ancestor that defines this attribute)

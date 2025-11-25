@@ -1,0 +1,5 @@
+class Foo {
+    foo(x : SELF_TYPE) : SELF_TYPE {
+        foo
+    };
+};

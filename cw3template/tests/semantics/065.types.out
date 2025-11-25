@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Undefined type `Baz` in static method dispatch
+Method `qux` not defined for type `Bar` in static dispatch

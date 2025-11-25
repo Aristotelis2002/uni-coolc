@@ -1,0 +1,9 @@
+class Foo {
+    foo : Foo;
+    
+    bar() : Int { 1 };
+
+    baz() : Int {
+        foo.bar()      
+    };
+};

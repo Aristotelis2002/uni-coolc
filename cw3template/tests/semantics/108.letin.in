@@ -1,0 +1,7 @@
+class Bar { };
+
+class Foo inherits Bar {
+    foo() : Bar {
+        let foo : Foo <- foo, bar : Bar <- foo in bar
+    };
+};

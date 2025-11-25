@@ -1,0 +1,4 @@
+Semantic check failed with 3 errors:
+Left-hand-side of integer comparison is not of type `Int`, but of type `Foo`
+Right-hand-side of integer comparison is not of type `Int`, but of type `String`
+In class `Foo` method `foo`: `Bool` is not `Int`: type of method body is not a subtype of return type

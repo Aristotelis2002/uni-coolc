@@ -1,0 +1,4 @@
+Semantic check failed with 3 errors:
+`Bar` inherits from `Bool` which is an error
+`Baz` inherits from `Int` which is an error
+`Zap` inherits from `String` which is an error

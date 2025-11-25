@@ -1,0 +1,17 @@
+class Baz {
+    bar(a: Foo, b: Foo) : Int { 1 };
+};
+
+class Foo inherits Baz {};
+
+class Bar inherits Foo {
+    foo : Foo;
+
+    bar : Bar;
+
+    baz : Baz;
+
+    baz() : Int {
+        bar@Baz.bar(foo, baz)
+    };
+};

@@ -1,0 +1,6 @@
+Semantic check failed with 5 errors:
+Type `Object` already defined
+Type `Bool` already defined
+Type `Int` already defined
+Type `IO` already defined
+Type `String` already defined

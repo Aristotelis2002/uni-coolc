@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Method `qux` not defined for type `Bar` in static dispatch

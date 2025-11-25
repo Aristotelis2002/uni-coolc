@@ -1,0 +1,4 @@
+class Foo {
+    foo(x: Foo, y: Foo) : Foo { self };
+};
+

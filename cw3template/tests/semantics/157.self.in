@@ -1,0 +1,11 @@
+class Foo {
+    foo : Foo;
+
+    foo() : SELF_TYPE {
+        new SELF_TYPE
+    };
+};
+
+class Bar inherits Foo {
+    bar() : Bar { foo() };
+};

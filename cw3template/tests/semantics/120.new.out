@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Attempting to instantiate unknown class `Baz`

@@ -1,0 +1,4 @@
+Semantic check failed with 1 errors:
+Detected 1 loops in the type hierarchy:
+1) Foo <- Bar <- 
+

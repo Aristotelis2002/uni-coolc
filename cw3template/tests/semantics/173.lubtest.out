@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+In class `Test` method `h`: `Z` is not `B`: type of method body is not a subtype of return type

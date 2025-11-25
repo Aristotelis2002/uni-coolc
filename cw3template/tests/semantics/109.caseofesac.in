@@ -1,0 +1,9 @@
+class Bar { };
+
+class Foo inherits Bar {
+    foo() : Bar {
+        case foo() of
+            foo : Foo => foo();
+        esac
+    };
+};

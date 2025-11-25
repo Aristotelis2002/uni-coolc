@@ -1,0 +1,6 @@
+class Main {
+  x: Int <- x;
+  main(): Int {
+    x
+  };
+};

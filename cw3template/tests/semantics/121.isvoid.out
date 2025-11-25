@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+In class `Foo` method `foo`: `Bool` is not `Foo`: type of method body is not a subtype of return type

@@ -1,0 +1,9 @@
+class Foo {
+    foo : Foo <- bar;
+    bar : Bar;
+    baz() : Foo {
+        qux <- foo
+    };
+};
+
+class Bar inherits Foo { };

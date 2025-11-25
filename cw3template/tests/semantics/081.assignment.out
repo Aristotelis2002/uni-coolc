@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+In class `Foo` assignee `foo`: `Bar` is not `Foo`: type of initialization expression is not a subtype of object type

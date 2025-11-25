@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+`x` in case-of-esac declared to be of type `SELF_TYPE` which is not allowed

@@ -1,0 +1,7 @@
+class Foo {
+    b : Bool;
+    foo : Foo;
+    bar() : Object {
+        while foo loop bar() pool 
+    };
+};

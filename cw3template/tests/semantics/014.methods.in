@@ -1,0 +1,10 @@
+class Foo {
+    bar : Bar;
+    foo() : Foo { bar };
+    bar() : Foo { bar };
+};
+
+class Bar inherits Foo {
+    foo : Foo;
+    baz() : Foo { foo };
+};

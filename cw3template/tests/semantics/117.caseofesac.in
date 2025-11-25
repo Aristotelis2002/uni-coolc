@@ -1,0 +1,10 @@
+class Bar { };
+
+class Foo {
+    foo() : Foo {
+        case foo() of
+            foo : Foo => foo;
+            bar : Baz => bar;
+        esac
+    };
+};

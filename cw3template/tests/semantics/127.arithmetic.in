@@ -1,0 +1,7 @@
+class Bar { };
+
+class Foo {
+    foo() : Int {
+        false + "foo"
+    };
+};

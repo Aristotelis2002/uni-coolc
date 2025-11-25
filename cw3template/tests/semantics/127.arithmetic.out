@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Left-hand-side of arithmetic expression is not of type `Int`, but of type `Bool`
+Right-hand-side of arithmetic expression is not of type `Int`, but of type `String`

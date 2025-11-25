@@ -1,0 +1,9 @@
+class Foo inherits Object { };
+
+class Foo inherits Bool { };
+
+class Foo inherits Int { };
+
+class Foo inherits IO { };
+
+class Foo inherits String { };

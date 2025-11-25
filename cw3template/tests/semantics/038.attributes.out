@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Attribute `foo` already defined for class `Foo`
+Attribute `foo` in class `Foo` declared to have type `Baz` which is undefined

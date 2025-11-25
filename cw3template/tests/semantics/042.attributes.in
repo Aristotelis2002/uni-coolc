@@ -1,0 +1,10 @@
+class Foo inherits Baz {
+    foo : Bar;
+    bar : Foo;
+};
+
+class Bar inherits Foo {
+    foo : Bar;
+};
+
+class Baz {};

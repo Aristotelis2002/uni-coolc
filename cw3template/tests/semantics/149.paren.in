@@ -1,0 +1,8 @@
+class Bar { };
+
+class Foo {
+    foo : Foo;
+    foo() : Int {
+        (2 + 3) * 4
+    };
+};

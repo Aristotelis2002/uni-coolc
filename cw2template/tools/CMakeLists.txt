@@ -15,8 +15,6 @@ set(INCLUDE_DIR "${PROJECT_ROOT}/include")
 set(GEN_DIR "${PROJECT_ROOT}/gen")
 set(LIB_DIR "${PROJECT_ROOT}/lib")
 set(BUILD_DIR "${PROJECT_ROOT}/build")
-set(SEMANTICS_DIR "${SRC_DIR}/semantics")
-set(CODEGEN_DIR "${SRC_DIR}/codegen")
 set(DRIVERS_DIR "${SRC_DIR}/drivers")
 
 set(LEXER_LIB "${LIB_DIR}/liblexer_gen_code.a")

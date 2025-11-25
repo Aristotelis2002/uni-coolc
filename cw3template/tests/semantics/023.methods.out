@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Method `foo` in class `Foo` declared to have return type `Bar` which is undefined

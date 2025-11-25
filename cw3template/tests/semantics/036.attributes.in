@@ -1,0 +1,6 @@
+class Foo {
+    foo : Foo;
+    foo : Bar;
+};
+
+class Bar {};

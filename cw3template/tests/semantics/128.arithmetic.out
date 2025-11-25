@@ -1,0 +1,4 @@
+Semantic check failed with 3 errors:
+Left-hand-side of arithmetic expression is not of type `Int`, but of type `Bool`
+Right-hand-side of arithmetic expression is not of type `Int`, but of type `String`
+In class `Foo` method `foo`: `Int` is not `Bool`: type of method body is not a subtype of return type

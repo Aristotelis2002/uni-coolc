@@ -1,0 +1,9 @@
+class Bar { };
+
+class Foo {
+    foo() : Foo {
+        case foo() of
+            foo : Foo => new Baz;
+        esac
+    };
+};

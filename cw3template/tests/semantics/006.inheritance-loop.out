@@ -1,0 +1,5 @@
+Semantic check failed with 1 errors:
+Detected 2 loops in the type hierarchy:
+1) Bar <- Baz <- 
+2) Qux <- Zap <- 
+

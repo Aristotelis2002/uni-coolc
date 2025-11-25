@@ -1,0 +1,17 @@
+class Foo {
+    foo : Foo;
+    bar : Bar;
+    baz : Baz;
+
+    foo() : Baz {
+        {
+            foo;
+            bar;
+            baz;
+        }
+    };
+};
+
+class Bar {};
+
+class Baz {};

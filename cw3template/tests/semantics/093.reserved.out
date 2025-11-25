@@ -1,0 +1,5 @@
+Semantic check failed with 4 errors:
+Type `Foo` already defined
+Type `Foo` already defined
+Type `Foo` already defined
+Type `Foo` already defined

@@ -1,0 +1,12 @@
+class Foo {
+};
+
+class Bar inherits Foo {
+    bar : Bar;
+    
+    bar() : Int { 1 };
+
+    baz() : String {
+        bar@Bar.qux()
+    };
+};

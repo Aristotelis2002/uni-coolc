@@ -1,0 +1,8 @@
+class Foo {
+    foo() : Foo { self };
+};
+
+class Bar inherits Foo {
+    foo() : Bar { self };
+    foo() : Bar { self };
+};

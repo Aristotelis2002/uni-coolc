@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+`Foo` inherits from `Bool` which is an error

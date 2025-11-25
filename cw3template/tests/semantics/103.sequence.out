@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Variable named `qux` not in scope

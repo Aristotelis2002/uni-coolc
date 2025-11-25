@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Formal argument `x` declared of type `SELF_TYPE` which is not allowed

@@ -1,0 +1,3 @@
+Semantic check failed with 2 errors:
+Invalid call to method `bar` from class `Baz`:
+  `Baz` is not a subtype of `Foo`: argument at position 1 (0-indexed) has the wrong type

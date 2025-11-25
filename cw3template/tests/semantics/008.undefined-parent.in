@@ -1,0 +1,7 @@
+class Foo inherits Bar { };
+
+class Bar inherits Baz { };
+
+class A inherits B { };
+
+class B inherits C { };

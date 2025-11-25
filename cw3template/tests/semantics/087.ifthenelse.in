@@ -1,0 +1,11 @@
+class Foo {
+    foo : Foo;
+    bar : Bar;
+
+    b : Bool;
+    foo() : Foo {
+        if b then foo else bar fi
+    };
+};
+
+class Bar inherits Foo {};

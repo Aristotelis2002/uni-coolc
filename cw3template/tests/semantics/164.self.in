@@ -1,0 +1,11 @@
+class Foo {
+    foo : Foo;
+
+    foo() : SELF_TYPE {
+        let foo : SELF_TYPE <- self in foo
+    };
+};
+
+class Bar inherits Foo {
+    bar() : Bar { foo() };
+};

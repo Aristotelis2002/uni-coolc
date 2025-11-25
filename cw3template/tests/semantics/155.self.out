@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+Initializer for variable `foo` in let-in expression is of type `Foo` which is not a subtype of the declared type `SELF_TYPE`

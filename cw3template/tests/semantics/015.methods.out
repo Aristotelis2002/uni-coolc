@@ -1,0 +1,6 @@
+Semantic check failed with 5 errors:
+Method `foo` already defined for class `Foo`
+Method `foo` already defined for class `Foo`
+Method `foo` already defined for class `Foo`
+Method `bar` already defined for class `Bar`
+Method `bar` already defined for class `Bar`

@@ -1,0 +1,9 @@
+class Foo {
+    foo : Foo <- bar;
+    bar : Bar;
+    baz() : Foo {
+        qux <- bar
+    };
+};
+
+class Bar { };

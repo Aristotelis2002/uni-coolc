@@ -1,0 +1,2 @@
+Semantic check failed with 1 errors:
+A `Bool` can only be compared to another `Bool` and not to a `Foo`

@@ -1,0 +1,7 @@
+class Foo {
+    foo : SELF_TYPE <- self;
+
+    foo() : SELF_TYPE {
+        foo
+    };
+};

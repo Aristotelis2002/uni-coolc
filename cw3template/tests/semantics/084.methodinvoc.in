@@ -1,0 +1,5 @@
+class Foo {
+    foo(foo: Foo) : Foo { foo };
+
+    bar() : Foo { foo(bar()) };
+};

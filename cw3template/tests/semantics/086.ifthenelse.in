@@ -1,0 +1,9 @@
+class Foo {
+    foo : Foo;
+    bar : Foo;
+
+    b : Bool;
+    foo() : Foo {
+        if foo then foo else bar fi
+    };
+};
