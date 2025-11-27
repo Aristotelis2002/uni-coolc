@@ -1,7 +1,6 @@
 script_dir="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 project_root="$(cd -- "${script_dir}/.." && pwd)"
 
-# First argument: tool name
 tool_name="semantics"
 
 tests_dir="${project_root}/tests/${tool_name}"
@@ -10,20 +9,20 @@ temp_dir="${project_root}/temp"
 
 mkdir -p "${temp_dir}"
 
-# Second argument: bless or input
-bless=false
-input=""
+# first argument: verbose or input
+verbose=""  # set to "true" to enable verbose mode
+input=""    # filter of test names by prefix
 if [ -n "${1:-}" ]; then
-    if [ "${1:-}" == "bless" ]; then
-        bless=true
+    if [ "${1:-}" == "verbose" ]; then
+        verbose=true
     else
         input="$1"
         if [ -n "${2:-}" ]; then
-            if [ "${2:-}" == "bless" ]; then
-                bless=true
+            if [ "${2:-}" == "verbose" ]; then
+                verbose=true
             else
-                echo "Error: third argument can only be 'bless'"
-                echo "Usage: $0 [input|prefix] [bless]"
+                echo "Error: second argument can only be 'verbose'"
+                echo "Usage: $0 [input|prefix] [verbose]"
                 exit 1
             fi
         fi
@@ -56,17 +55,17 @@ run_test() {
 
     total_tests=$((total_tests + 1))
 
-    if $bless; then
-        "${bin_dir}/${tool_name}" "${in_path}" > "${out_path}"
-    else
-        "${bin_dir}/${tool_name}" "${in_path}" > "${sol_path}"
+    "${bin_dir}/${tool_name}" "${in_path}" > "${sol_path}"
 
-        if ! run_diff "${out_path}" "${sol_path}"; then
-            echo "Test ${testname} FAILED"
-        else
-            echo "Test ${testname} PASSED"
-            passed_tests=$((passed_tests + 1))
+    if ! diff_output=$(run_diff "${out_path}" "${sol_path}"); then
+        echo "Test ${testname} FAILED"
+        if [[ -n "${verbose}" ]]; then
+            echo "diff is"
+            echo "${diff_output}"
         fi
+    else
+        echo "Test ${testname} PASSED"
+        passed_tests=$((passed_tests + 1))
     fi
 }
 
@@ -90,17 +89,11 @@ else
             done
         else
             echo "Error: '${input}' is not a valid file name or prefix"
-            echo "Usage: $0 [input|prefix] [bless]"
+            echo "Usage: $0 [input|prefix] [verbose]"
             exit 1
         fi
     fi
 fi
 
-# === Print summary ===
-if ! $bless; then
-    echo
-    echo "Total ${passed_tests} out of ${total_tests} tests PASSED"
-else
-    echo
-    echo "Total ${total_tests} tests BLESSED"
-fi
+echo
+echo "Total ${passed_tests} out of ${total_tests} tests PASSED"
