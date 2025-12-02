@@ -1,0 +1,50 @@
+% vim: textwidth=0 nowrap
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{endnotes}
+\usepackage{enumitem}
+\usepackage[bulgarian]{babel}
+\setmainfont{Noto Serif}
+
+\setlist{itemsep=0pt, parsep=0pt, topsep=1em, partopsep=0pt}
+
+\makeatletter
+\newcommand{\verbatimfont}[1]{\def\verbatim@font{#1}}%
+\makeatother
+
+\newfontfamily\CyrMono[
+  Ligatures = NoCommon,
+  Mapping = none
+]{Roboto Mono}
+
+\usepackage[top=2cm,bottom=4.5cm,left=2cm,right=2cm]{geometry}
+\usepackage{titling}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\lhead{Компилатори, Въведение}
+\rhead{}
+\lfoot{Зимен семестър, 2025/2026}
+\cfoot{}
+\rfoot{страница \thepage~от \pageref*{LastPage}}
+
+\setlength{\headheight}{2cm}
+
+\usepackage{xcolor}
+
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
+% Allow the user to supply \doctitle
+\title{\doctitle}
+
+\author{}
+\date{}
+
+\setlength{\droptitle}{-4em}
+
+\predate{}\postdate{}\preauthor{}\postauthor{}
+
+\setstretch{1.2}
+
+\pagestyle{fancy}
