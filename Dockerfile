@@ -11,17 +11,22 @@ RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
 
 RUN apt-get update
 RUN apt-get install -y \
-  flex \
   bison \
   build-essential \
+  cmake \
   csh \
-  openjdk-17-jdk-headless \
+  curl \
+  flex \
+  gcc make g++ device-tree-compiler \
+  gcc-riscv64-unknown-elf gcc-riscv64-linux-gnu g++-riscv64-linux-gnu \
+  git \
   libxaw7-dev \
   nano \
-  vim \
+  openjdk-17-jdk-headless \
+  python3 \
   sudo \
-  curl \
   unzip \
+  vim \
   wget
 
 RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
@@ -105,14 +110,22 @@ EOF
 RUN chmod +x /usr/local/bin/container-entrypoint.sh
 
 # Download, build, and install ANTLR4 C++ runtime
-RUN apt-get install -y python3 cmake
 RUN mkdir -p /tmp/antlr-build
 WORKDIR /tmp/antlr-build
 RUN wget -cO - https://www.antlr.org/download/antlr4-cpp-runtime-${ANTLR_VERSION}-source.zip > antlr.zip
 RUN unzip antlr.zip
 RUN cmake . && cmake --build . --parallel --target install
 
-RUN apt-get install -y git
+# download and install spike (RISC-V simulator)
+RUN cd ~  && \
+    git clone https://github.com/riscv/riscv-isa-sim.git && \
+    cd riscv-isa-sim && \
+    git checkout 4c870d0 && \
+    mkdir build && \
+    cd build && \
+    ../configure --prefix=/usr/local && \
+    make -j 20 && \
+    sudo make install
 
 USER student
 WORKDIR /home/student/my-code
