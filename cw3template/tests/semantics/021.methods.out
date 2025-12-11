@@ -1,4 +1,3 @@
-Semantic check failed with 3 errors:
+Semantic check failed with 2 errors:
 Method `foo` already defined for class `Foo`
-In class `Foo` method `foo`: `SELF_TYPE` is not `Bar`: type of method body is not a subtype of return type
 In class `Foo` method `foo`: `SELF_TYPE` is not `Bar`: type of method body is not a subtype of return type
