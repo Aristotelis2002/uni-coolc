@@ -1,0 +1,8 @@
+Number of vertices: Num of neighbours of vertex 0: Neighbours of 0:
+Num of neighbours of vertex 1: Neighbours of 1:
+Num of neighbours of vertex 2: Neighbours of 2:
+Here is the graph:
+0: 1 2 
+1: 1 2 
+2: 1 2 
+Start of DFS: Visit order: 0 2 1 

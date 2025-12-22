@@ -1,0 +1,10 @@
+class Main inherits IO {
+    x : String <- "a longer string to compare, should be fine, rigx";
+    y : String <- "a longer string to compare, should be fine, righ";
+    main() : Object {
+        if x = y 
+        then out_string("not ok\n")
+        else out_string("ok\n")
+        fi
+    };
+};

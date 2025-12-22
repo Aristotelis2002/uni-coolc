@@ -1,0 +1,11 @@
+Number of vertices: No. of neighbors for vertex 0: Neighbor no. 0: (index and weight, on separate lines)
+Neighbor no. 1: (index and weight, on separate lines)
+No. of neighbors for vertex 1: No. of neighbors for vertex 2: Neighbor no. 0: (index and weight, on separate lines)
+Neighbor no. 1: (index and weight, on separate lines)
+Confirming that the graph is:
+0: 1 6, 2 3, 
+1: 
+2: 0 3, 1 2, 
+Source and destination (on separate lines):
+Shortest path from 0 to 1 has a weight of 5
+Minimum spanning tree has cost: 5
